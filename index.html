@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeru Nation | Official Music Platform</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- AOS Animations CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Apple Mobile Web App -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Zeru Nation">
+  <link rel="apple-touch-icon" href="images/icon-192.png">
+  
+  <!-- Theme Colors -->
+  <meta name="theme-color" content="#d4af37">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+     <a class="navbar-brand fw-bold" href="index.html">
+        <i class="fa-solid fa-crown me-2 text-gold"></i>
+        <span class="text-emerald">ZERU</span> <span class="text-gold">NATION</span>
+    </a>
+      <button class="navbar-toggler border-0 text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fa-solid fa-bars fs-3"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="albums.html">Albums</a></li>
+          <li class="nav-item"><a class="nav-link" href="lyrics.html">Lyrics</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="light-rays"></div>
+    <div class="container relative-z" data-aos="zoom-in" data-aos-duration="1200">
+      <div class="brand-logo-placeholder mb-3">
+        <i class="fa-solid fa-cross fa-3x text-gold"></i>
+      </div>
+      <h1 class="display-3 fw-bold text-uppercase hero-title">Welcome to <span class="text-gold">Zeru Nation</span></h1>
+      <p class="lead text-light max-w-700 mx-auto mt-3">
+        Bringing the Gospel to the Nations through Worship, Inspiration, and Excellence.
+      </p>
+      <div class="hero-buttons mt-4 d-flex flex-wrap justify-content-center gap-3">
+        <a href="#latest-releases" class="btn btn-gold btn-lg"><i class="fa-solid fa-play me-2"></i>Listen Now</a>
+        <a href="music.html" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-music me-2"></i>Latest Songs</a>
+        <a href="https://youtube.com/channel/UC1_cAwa7MP4a0t60ELBgdXA?si=kmZA1y-DdIq9tYgB" class="btn btn-emerald btn-lg"><i class="fa-brands fa-youtube me-2"></i>YouTube</a>
+        <a href="contact.html" class="btn btn-glass btn-lg"><i class="fa-solid fa-heart me-2"></i>Join Family</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Releases Section -->
+  <section id="latest-releases" class="py-5 bg-darker">
+    <div class="container py-4">
+      <div class="section-title text-center mb-5" data-aos="fade-up">
+        <h2 class="text-uppercase fw-bold">Latest <span class="text-gold">Releases</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Song Card Template -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card glass-card h-100">
+            <div class="card-img-wrapper">
+              <img src="images/samehe.jpeg" class="card-img-top" alt="Samehe Sabini Mara Saba">
+              <div class="overlay d-flex align-items-center justify-content-center gap-2">
+                <button class="btn btn-gold rounded-circle play-btn" onclick="playSong('Samehe Sabini Mara Saba', 'Zeru Nation')">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Samehe Sabini Mara Saba</h5>
+              <p class="text-muted small mb-3">Zeru Nation • Single</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="lyrics.html" class="btn btn-sm btn-outline-gold"><i class="fa-solid fa-file-lines me-1"></i>Lyrics</a>
+                <a href="https://youtu.be/tQSX5ok3ZJU?si=byisgz2y3h43dyhr" class="btn btn-sm btn-outline-light"><i class="fa-brands fa-youtube me-1"></i>Watch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Song Card 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card glass-card h-100">
+            <div class="card-img-wrapper">
+              <img src="images/Mungu uliahidi.jpeg" class="card-img-top" alt="Mungu Uliahidi Hutaniacha">
+              <div class="overlay d-flex align-items-center justify-content-center gap-2">
+                <button class="btn btn-gold rounded-circle play-btn" onclick="playSong('Mungu Uliahidi Hutaniacha', 'Zeru Nation')">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Mungu Uliahidi Hutaniacha</h5>
+              <p class="text-muted small mb-3">Zeru Nation • Single</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="lyrics.html" class="btn btn-sm btn-outline-gold"><i class="fa-solid fa-file-lines me-1"></i>Lyrics</a>
+                <a href="https://youtu.be/VwNfCGbf7oY?si=eoAEgvZtF5WM60t5" class="btn btn-sm btn-outline-light"><i class="fa-brands fa-youtube me-1"></i>Watch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+        <!-- Song Card 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card glass-card h-100">
+            <div class="card-img-wrapper">
+              <img src="images/upendo wa kweli.jpeg" class="card-img-top" alt="Upendo wa Kweli">
+              <div class="overlay d-flex align-items-center justify-content-center gap-2">
+                <button class="btn btn-gold rounded-circle play-btn" onclick="playSong('Upendo wa Kweli', 'Zeru Nation')">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Upendo wa Kweli</h5>
+              <p class="text-muted small mb-3">Zeru Nation • Single</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="lyrics.html" class="btn btn-sm btn-outline-gold"><i class="fa-solid fa-file-lines me-1"></i>Lyrics</a>
+                <a href="https://vt.tiktok.com/ZS4MxfhPF/" class="btn btn-sm btn-outline-light"><i class="fa-brands fa-youtube me-1"></i>Watch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- Sticky Bottom Music Player Component -->
+      <div class="music-player-bar fixed-bottom glass-morphism py-2 px-3">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+          
+          <!-- Track Title & Artist -->
+          <div class="d-flex align-items-center gap-3">
+            <div class="player-cover">
+              <i class="fa-solid fa-compact-disc fa-2x text-gold spin-animation" style="animation-play-state: paused;"></i>
+            </div>
+            <div>
+              <h6 class="mb-0 text-gold fw-bold" id="current-title">Samehe ili mungu akusamehe</h6>
+              <small class="text-emerald fw-semibold" id="current-artist">Zeru Nation</small>
+            </div>
+          </div>
+
+          <!-- Center Player Controls & Progress Bar -->
+          <div class="player-controls text-center flex-grow-1 max-w-md mx-auto">
+            <div class="d-flex align-items-center gap-3 justify-content-center mb-1">
+              <button class="btn text-light p-0" id="prev-btn" title="Previous Track">
+                <i class="fa-solid fa-backward-step fs-5"></i>
+              </button>
+              <button class="btn btn-gold rounded-circle btn-play-main px-3 py-2" id="main-play-btn" title="Play / Pause">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <button class="btn text-light p-0" id="next-btn" title="Next Track">
+                <i class="fa-solid fa-forward-step fs-5"></i>
+              </button>
+            </div>
+
+            <!-- Time & Progress Drag Bar -->
+            <div class="d-flex align-items-center gap-2 px-2">
+              <small class="text-white-muted small" id="track-current-time">0:00</small>
+              <input type="range" class="form-range flex-grow-1 custom-seekbar" id="track-progress" min="0" max="100" value="0">
+              <small class="text-white-muted small" id="track-duration">0:00</small>
+            </div>
+          </div>
+
+          <!-- Volume Controls -->
+          <div class="d-none d-md-flex align-items-center gap-2">
+            <i class="fa-solid fa-volume-high text-emerald cursor-pointer" id="volume-icon"></i>
+            <input type="range" class="form-range volume-slider" min="0" max="100" value="80" style="width: 100px;">
+          </div>
+
+        </div>
+      </div>
+  
+<!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/app.js"></script>
+  
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registered:', reg))
+        .catch(err => console.log('Service Worker registration failed:', err));
+    }
+  </script>
+</body>
+</html>
+
+

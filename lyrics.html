@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Lyrics & Inspiration | Zeru Nation</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- AOS Animations CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="fa-solid fa-crown me-2 text-gold"></i>
+        <span class="text-emerald">ZERU</span> <span class="text-gold">NATION</span>
+      </a>
+      <button class="navbar-toggler border-0 text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fa-solid fa-bars fs-3 text-gold"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="albums.html">Albums</a></li>
+          <li class="nav-item"><a class="nav-link active" href="lyrics.html">Lyrics</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header & Song Selection Bar -->
+  <section class="py-5 mt-5 bg-darker text-center">
+    <div class="container py-4" data-aos="fade-down">
+      <h1 class="display-4 fw-bold text-uppercase">Worship <span class="text-gold">Lyrics</span></h1>
+      <p class="text-white-soft">Sing along and discover the biblical foundation behind each song.</p>
+      
+      <!-- Song Quick Select Dropdown -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+          <select class="form-select bg-dark text-gold border-warning form-select-lg">
+            <option selected>Select Song: Samehe Sabini Mara Saba</option>
+            <option>Mungu Uliahidi Hutaniacha</option>
+            <option>Upendo wa Kweli</option>
+            <option>Moyo Wangu Tulia</option>
+            <option>Uweponi Mwako</option>
+            <option>Roho Chafu Ni Mbaya</option>
+          </select>
+        </div>
+      </div>
+      <div class="title-underline"></div>
+    </div>
+  </section>
+
+  <!-- Lyrics & Inspiration Layout -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Main Lyrics Display (Left Column) -->
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="card glass-card p-4 p-md-5">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <div>
+                <h2 class="fw-bold text-gold mb-1">Samehe Sabini Mara Saba</h2>
+                <span class="badge bg-emerald text-light fs-6">Zeru Nation Worship</span>
+              </div>
+              <button class="btn btn-gold rounded-circle" onclick="playSong('Samehe Sabini Mara Saba', 'Zeru Nation')">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+
+            <hr class="border-warning my-4">
+
+            <!-- Verse / Chorus Blocks -->
+            <div class="lyrics-text fs-5 leading-relaxed">
+              <p class="text-emerald fw-bold mb-2">[Verse 1]</p>
+              <p class="text-white-pure mb-4">
+                Moyo wangu ulikuwa mzito,<br>
+                Umebeba uchungu na majeraha.<br>
+                Lakini sauti yako inasema,<br>
+                Acha yote, mwachie Bwana.
+              </p>
+
+              <p class="text-gold fw-bold mb-2">[Chorus]</p>
+              <p class="text-white-pure mb-4 fw-semibold">
+                Samehe sabini mara saba,<br>
+                Fungua moyo wako uwe huru.<br>
+                Upendo wa Yesu hauna mipaka,<br>
+                Samehe wenzako upate amani.
+              </p>
+
+              <p class="text-emerald fw-bold mb-2">[Verse 2]</p>
+              <p class="text-white-pure mb-4">
+                Haustahili kuishi na amani tu,<br>
+                Pale unapoachilia msamaha.<br>
+                Giza linakimbia mwangaza ukija,<br>
+                Bwana Yesu anaponya roho yako.
+              </p>
+
+              <p class="text-gold fw-bold mb-2">[Bridge]</p>
+              <p class="text-white-pure mb-4">
+                Msamaha ni nguvu, msamaha ni uzima,<br>
+                Katika Jina la Yesu, tuko huru leo!
+              </p>
+            </div>
+
+            <!-- Action Toolbar -->
+            <div class="d-flex flex-wrap gap-2 mt-4 pt-3 border-top border-secondary">
+              <button class="btn btn-outline-gold btn-sm"><i class="fa-solid fa-file-pdf me-2"></i>Download PDF Lyrics</button>
+              <button class="btn btn-emerald btn-sm"><i class="fa-solid fa-share-nodes me-2"></i>Share Lyrics</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scripture & Story (Right Column) -->
+        <div class="col-lg-5" data-aos="fade-left">
+          
+          <!-- Scripture Inspiration Card -->
+          <div class="card glass-card p-4 mb-4 border-emerald">
+            <h4 class="fw-bold text-emerald mb-3">
+              <i class="fa-solid fa-book-bible me-2"></i>Scripture Inspiration
+            </h4>
+            <blockquote class="blockquote mb-0">
+              <p class="fs-6 text-white-pure italic">
+                "Petro akamwendea akamwambia, 'Bwana, ndugu yangu anikosie mara ngapi nami nimsamehe? Hata mara saba?' Yesu akamwambia, 'Sikuambii hata mara saba, bali hata sabini mara saba.'"
+              </p>
+              <footer class="blockquote-footer text-gold mt-2 fw-bold">Mathayo 18:21-22</footer>
+            </blockquote>
+          </div>
+
+          <!-- Story Behind the Song Card -->
+          <div class="card glass-card p-4 mb-4">
+            <h4 class="fw-bold text-gold mb-3">
+              <i class="fa-solid fa-heart-pulse me-2"></i>Story Behind the Song
+            </h4>
+            <p class="text-white-soft small leading-relaxed">
+              This worship piece was birthed during a prayer retreat when the ministry reflected on the weight of unforgiveness holding back believers from experiencing God's full glory. It serves as an anthem calling nations to release past pains and embrace Christ's unlimited grace.
+            </p>
+          </div>
+
+          <!-- Social Share Card -->
+          <div class="card glass-card p-4 text-center">
+            <h5 class="fw-bold text-white-pure mb-3">Bless Someone With This Song</h5>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="#" class="btn btn-glass text-gold"><i class="fa-brands fa-whatsapp fs-4"></i></a>
+              <a href="#" class="btn btn-glass text-emerald"><i class="fa-brands fa-facebook fs-4"></i></a>
+              <a href="#" class="btn btn-glass text-light"><i class="fa-brands fa-x-twitter fs-4"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Bottom Music Player Component -->
+    <div class="music-player-bar fixed-bottom glass-morphism py-2 px-3">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+            
+            <!-- Track Title & Cover -->
+            <div class="d-flex align-items-center gap-3">
+            <div class="player-cover">
+                <i class="fa-solid fa-compact-disc fa-2x text-gold spin-animation" style="animation-play-state: paused;"></i>
+            </div>
+            <div>
+                <h6 class="mb-0 text-gold fw-bold" id="current-title">Samehe Sabini Mara Saba</h6>
+                <small class="text-emerald fw-semibold" id="current-artist">Zeru Nation</small>
+            </div>
+            </div>
+
+            <!-- Center Player Controls & Seekbar -->
+            <div class="player-controls text-center flex-grow-1 max-w-md mx-auto">
+            <div class="d-flex align-items-center gap-3 justify-content-center mb-1">
+                <button class="btn text-light p-0" id="prev-btn" title="Previous Track">
+                <i class="fa-solid fa-backward-step fs-5"></i>
+                </button>
+                <button class="btn btn-gold rounded-circle btn-play-main px-3 py-2" id="main-play-btn" title="Play / Pause">
+                <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="btn text-light p-0" id="next-btn" title="Next Track">
+                <i class="fa-solid fa-forward-step fs-5"></i>
+                </button>
+            </div>
+
+            <!-- Time & Progress Drag Bar -->
+            <div class="d-flex align-items-center gap-2 px-2">
+                <small class="text-white-muted small" id="track-current-time">0:00</small>
+                <input type="range" class="form-range flex-grow-1 custom-seekbar" id="track-progress" min="0" max="100" value="0">
+                <small class="text-white-muted small" id="track-duration">0:00</small>
+            </div>
+            </div>
+
+            <!-- Volume Controls -->
+            <div class="d-none d-md-flex align-items-center gap-2">
+            <i class="fa-solid fa-volume-high text-emerald cursor-pointer" id="volume-icon"></i>
+            <input type="range" class="form-range volume-slider" min="0" max="100" value="80" style="width: 100px;">
+            </div>
+
+        </div>
+    </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+/* ==========================================================================
+   ZERU NATION - RICH EMERALD, GOLD, WHITE & BLACK PALETTE
+   ========================================================================== */
+
+:root {
+  /* Vibrant Emerald Palette */
+  --emerald-rich: #0B5D34;       /* Dominant Emerald Green */
+  --emerald-vivid: #10B981;      /* Bright Glowing Emerald */
+  --emerald-deep: #064E3B;       /* Deep Emerald Accent */
+  
+  /* Radiant Gold Palette */
+  --gold-main: #F59E0B;          /* Brilliant Warm Gold */
+  --gold-metallic: #D4AF37;      /* Classic Metallic Gold */
+  --gold-light: #FDE68A;         /* Light Soft Gold */
+
+  /* White & Light Tones */
+  --white-pure: #FFFFFF;
+  --white-soft: #F3F4F6;
+  --white-muted: #D1D5DB;
+
+  /* Black & Dark Tones (For Contrast) */
+  --black-deep: #090D0A;
+  --black-card: rgba(11, 25, 18, 0.85);
+
+  /* Glassmorphism & Borders */
+  --glass-emerald: rgba(16, 185, 129, 0.15);
+  --border-gold: rgba(245, 158, 11, 0.4);
+  --border-emerald: rgba(16, 185, 129, 0.4);
+}
+
+/* ==========================================================================
+   GLOBAL STYLES & BACKGROUNDS
+   ========================================================================== */
+
+body {
+  background: radial-gradient(circle at top, #0A3A22 0%, #062013 50%, #030D08 100%);
+  color: var(--white-pure);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+/* Section Backgrounds - Rich Emerald Tinted */
+.bg-darker {
+  background-color: #051A10 !important;
+  border-top: 1px solid var(--border-emerald);
+  border-bottom: 1px solid var(--border-emerald);
+}
+
+/* Text Color Utilities */
+.text-gold { color: var(--gold-main) !important; }
+.text-emerald { color: var(--emerald-vivid) !important; }
+.text-white-soft { color: var(--white-soft) !important; }
+
+/* ==========================================================================
+   HIGH-CONTRAST BUTTONS
+   ========================================================================== */
+
+/* Gold Primary Button */
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-main) 0%, #D97706 100%);
+  color: #000000 !important;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-main) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
+}
+
+/* Emerald Green Secondary Button */
+.btn-emerald {
+  background: linear-gradient(135deg, var(--emerald-vivid) 0%, var(--emerald-rich) 100%);
+  color: var(--white-pure) !important;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+  transition: all 0.3s ease;
+}
+.btn-emerald:hover {
+  background: linear-gradient(135deg, #34D399 0%, var(--emerald-vivid) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+}
+
+/* Glass & Outline Buttons */
+.btn-outline-gold {
+  border: 2px solid var(--gold-main);
+  color: var(--gold-main);
+  font-weight: 600;
+}
+.btn-outline-gold:hover {
+  background-color: var(--gold-main);
+  color: #000000 !important;
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--white-pure);
+  color: var(--white-pure);
+}
+.btn-glass:hover {
+  background: var(--white-pure);
+  color: #000000 !important;
+}
+
+/* ==========================================================================
+   GLASSMORPHISM CARDS (Emerald Surface + Gold Glow)
+   ========================================================================== */
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(11, 45, 28, 0.9) 0%, rgba(6, 25, 15, 0.9) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--emerald-vivid);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3), 0 0 15px rgba(245, 158, 11, 0.2);
+}
+
+.glass-card .card-title {
+  color: var(--white-pure);
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+
+.custom-navbar {
+  background: rgba(6, 32, 19, 0.95);
+  backdrop-filter: blur(14px);
+  border-bottom: 2px solid var(--gold-main);
+}
+
+.custom-navbar .nav-link {
+  color: var(--white-soft);
+  font-weight: 600;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover, 
+.custom-navbar .nav-link.active {
+  color: var(--gold-main) !important;
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+}
+
+/* ==========================================================================
+   HERO SECTION (Vibrant Green & Gold Rays)
+   ========================================================================== */
+
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+  background: radial-gradient(circle at center, #0E6B3C 0%, #073B20 50%, #031A0E 90%);
+  overflow: hidden;
+}
+
+.hero-title {
+  color: var(--white-pure);
+  text-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+}
+
+.light-rays {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, rgba(16, 185, 129, 0.15) 40%, transparent 75%);
+  animation: rotate 25s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+
+/* Section Title Accents */
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold-main), var(--emerald-vivid));
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   STICKY BOTTOM MUSIC PLAYER
+   ========================================================================== */
+
+.music-player-bar {
+  background: rgba(4, 20, 12, 0.96);
+  backdrop-filter: blur(16px);
+  border-top: 2px solid var(--gold-main);
+}
+
+.spin-animation {
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom Audio Range Inputs */
+.custom-seekbar, .volume-slider {
+  accent-color: var(--gold-main);
+  height: 4px;
+  cursor: pointer;
+}
+
+.custom-seekbar::-webkit-slider-thumb, .volume-slider::-webkit-slider-thumb {
+  background-color: var(--emerald-vivid);
+  border: 2px solid var(--gold-main);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Fix Desktop Responsiveness & Width Constraints */
+.container {
+  width: 100%;
+  max-width: 1200px !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.glass-card {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Ensure side-by-side desktop layout above 992px 
+@media (min-width: 992px) {
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+} */
